@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aura Tech Solutions Uganda | Web, Networks, Security & IT Support</title>
+  <meta name="description" content="Aura Tech Solutions Uganda: websites and apps, networking, CCTV, cloud hosting, IT support, training and hardware. Pay with MTN/Airtel Mobile Money or card.">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a class="logo" href="/">
+        <span class="logo-mark">A</span>
+        <span>Aura Tech<small>SOLUTIONS UGANDA</small></span>
+      </a>
+      <nav class="links" id="nav" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#payments">Payments</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div style="display:flex;gap:10px;align-items:center">
+        <button class="btn small cart-btn" id="openCart" type="button">Cart <span class="badge" id="cartCount">0</span></button>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">Kampala · Uganda · Remote worldwide</span>
+        <h1>Technology that <span>works for your business</span></h1>
+        <p>From websites and mobile apps to networks, CCTV and day-to-day IT support, Aura Tech Solutions Uganda helps businesses, schools and organisations get reliable technology without the headaches.</p>
+        <div class="cta">
+          <a class="btn" href="#services">Browse services &amp; shop</a>
+          <a class="btn ghost" href="#contact">Get a free quote</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>6+</b><span>Core service lines</span></div>
+          <div class="stat"><b>Mobile Money</b><span>MTN &amp; Airtel supported</span></div>
+          <div class="stat"><b>Global</b><span>Cards accepted worldwide</span></div>
+          <div class="stat"><b>Local</b><span>On-site support in Uganda</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="alt">
+      <div class="container">
+        <span class="eyebrow">What we do</span>
+        <h2>Services &amp; products</h2>
+        <p class="lead">Pick what you need and pay securely online, or <a href="#contact">contact us</a> for a custom quote.</p>
+        <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
+        <div class="grid" id="products" aria-live="polite"><p class="lead">Loading…</p></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">About us</span>
+          <h2>Practical technology, honest service</h2>
+          <p class="lead">Aura Tech Solutions Uganda is a technology company serving businesses, schools and individuals. We design, build, install and support the systems you depend on, and we explain things in plain language.</p>
+          <ul class="checks">
+            <li>Clear quotes with no hidden costs</li>
+            <li>Local support team and remote help</li>
+            <li>Quality equipment with warranty</li>
+            <li>Your data handled according to Uganda's Data Protection and Privacy Act</li>
+          </ul>
+        </div>
+        <div class="grid" style="margin-top:0;grid-template-columns:1fr 1fr">
+          <div class="card"><div class="icon">💻</div><h3>Web &amp; Apps</h3><p>Websites, web apps and mobile apps.</p></div>
+          <div class="card"><div class="icon">📡</div><h3>Networking</h3><p>Wi-Fi, cabling and office networks.</p></div>
+          <div class="card"><div class="icon">📹</div><h3>Security</h3><p>CCTV and access solutions.</p></div>
+          <div class="card"><div class="icon">🛠️</div><h3>IT Support</h3><p>Maintenance, backups and repairs.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="payments" class="alt">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">Payments</span>
+          <h2>Pay the way that suits you</h2>
+          <p class="lead">Checkout is handled by trusted payment providers. We never see or store your card number or Mobile Money PIN.</p>
+          <div class="pay-logos">
+            <span>MTN Mobile Money</span><span>Airtel Money</span><span>Visa</span><span>Mastercard</span><span>Pesapal</span><span>Flutterwave</span><span>Stripe</span>
+          </div>
+        </div>
+        <ul class="checks">
+          <li><b>In Uganda:</b> pay in UGX with MTN or Airtel Mobile Money, or by card, through Flutterwave or Pesapal.</li>
+          <li><b>Worldwide:</b> pay in USD with a Visa or Mastercard through Stripe or Flutterwave.</li>
+          <li>You get an order reference and a payment status page after checkout.</li>
+          <li>Read our <a href="/terms.html">Terms &amp; Conditions</a> and <a href="/privacy.html">Privacy Policy</a>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h2>Tell us what you need</h2>
+          <p class="lead">Send a message and we will reply by email or phone, usually within one business day.</p>
+          <ul class="checks">
+            <li>Email: <a id="contactEmail" href="#">…</a></li>
+            <li>Phone / WhatsApp: <span id="contactPhone">…</span></li>
+            <li>Location: Kampala, Uganda</li>
+          </ul>
+        </div>
+        <form class="stack" id="contactForm" novalidate>
+          <label>Your name <input name="name" required maxlength="100" autocomplete="name"></label>
+          <label>Email <input name="email" type="email" required maxlength="150" autocomplete="email"></label>
+          <label>Phone (optional) <input name="phone" maxlength="30" autocomplete="tel"></label>
+          <label>Subject <input name="subject" maxlength="150"></label>
+          <label>Message <textarea name="message" required maxlength="3000"></textarea></label>
+          <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label class="check"><input type="checkbox" name="consent" required> <span>I agree to the <a href="/privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.</span></label>
+          <button class="btn" type="submit">Send message</button>
+          <div class="msg" id="contactMsg" role="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="container">
+      <div class="foot">
+        <div>
+          <a class="logo" href="/"><span class="logo-mark">A</span><span>Aura Tech<small>SOLUTIONS UGANDA</small></span></a>
+          <p style="color:var(--muted);max-width:34ch">Reliable technology solutions for businesses, schools and individuals in Uganda and beyond.</p>
+        </div>
+        <div><h4>Company</h4><ul><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li></ul></div>
+        <div><h4>Legal</h4><ul><li><a href="/terms.html">Terms &amp; Conditions</a></li><li><a href="/privacy.html">Privacy Policy</a></li></ul></div>
+        <div><h4>Pay with</h4><ul><li>Mobile Money</li><li>Visa / Mastercard</li></ul></div>
+      </div>
+      <div class="copy"><span>© <span id="year"></span> Aura Tech Solutions Uganda. All rights reserved.</span><span>Made in Uganda 🇺🇬</span></div>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+    <header><h3 id="drawerTitle">Your cart</h3><button class="x" id="closeCart" type="button" aria-label="Close">×</button></header>
+    <div class="body" id="drawerBody"></div>
+    <footer id="drawerFooter"></footer>
+  </aside>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
